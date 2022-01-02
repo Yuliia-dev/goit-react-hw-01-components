@@ -7,10 +7,15 @@ import { FriendList } from '../FriendList/FriendList';
 import transactions from '../TransactionHistory/transactions.json';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { Container } from './App.styled';
+import {GlobalStyle} from '../helper/GlobalStyle.styled';
+
+
+
 
 export default function App() {
   return (
     <Container>
+      <GlobalStyle/>
       <Profile
         userName={user.username}
         tag={user.tag}

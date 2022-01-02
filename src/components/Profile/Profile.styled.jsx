@@ -1,29 +1,27 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+
 
 export const ContainerProfile = styled.div`
 position: relative;
 padding: 15px;
-margin-top: 15px;
-margin-bottom: 20px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+margin: 15px auto;
+display: block;
 background-color: white;
+height: 400px;
+max-width: 300px;
 `
 export const Description = styled.div`
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center; 
-height: 450px;
-width: 300px;
+justify-content: center;
+margin-top: 20px;
 `
 export const Avatar = styled.img`
-height: 200px;
+max-height: 200px;
 border-radius: 50%;
-background-color: #c5b5b5;
+background-color: #a39c9c;
 `
 export const UserName = styled.p`
 margin:  10px 0 0 0;
@@ -41,13 +39,13 @@ font-weight: 400;
 
 export const Stats = styled.ul`
 position: absolute;
+left: 0;
 bottom: 0;
 display: flex;
 justify-content: space-between;
 padding: 0;
 height: 15%;
 width: 100%;
-margin-bottom: 0;
 `
 
 export const StatsItem = styled.li`
@@ -56,7 +54,6 @@ align-items: center;
 flex-direction: column;
 padding: 15px 10px;
 width: 100%;
-list-style: none;
 background-color: ${prop => `${prop.color}`};
 `
 

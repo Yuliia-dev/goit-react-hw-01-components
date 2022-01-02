@@ -3,31 +3,28 @@ import getRandomHexColor from "../helper/randomColor"
 
 export const Container = styled.section`
 position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
 padding: 15px;
-margin-bottom: 15px;
-width: 300px;
+margin: 15px auto;
+max-width: 300px;
 height: 150px;
 background-color: white;
 `
 
 export const Title = styled.h2`
+display: flex;
+justify-content: center;
+margin-top: 30px;
 text-transform: uppercase;
-height: 100%;
 `
 
 export const StatList = styled.ul`
 position: absolute;
+left: 0;
 bottom: 0;
 display: flex;
 justify-content: space-between;
-padding: 0;
-height: 70px;
-width: 100%;
-margin-bottom: 0;
+max-height: 70px;
+max-width: 100%;
 `
 
 export const StatItem = styled.li`
