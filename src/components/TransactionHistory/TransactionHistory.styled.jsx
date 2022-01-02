@@ -8,7 +8,7 @@ margin: 0 auto;
 border-radius: 15px;
 max-width: 600px;
 height: 100%;
-background-color: white;
+background-color: ${(props) => props.theme.colors.white};
 `
 
 export const Subtitle = styled.thead`
@@ -19,7 +19,7 @@ top: 0;
 left: 0;
 height: 40px;
 width: 100%;
-background-color: #17a5f7;
+background-color: ${(props) => props.theme.colors.blue};
 `
 
 export const SubtitleBox = styled.tr`
@@ -31,11 +31,7 @@ align-items: center;
 export const SubtitleText = styled.th`
 text-transform: uppercase;
 padding: 15px 30px;
-color: white;
-`
-
-export const Body = styled.tbody`
-margin: 0;
+color: ${(props) => props.theme.colors.white};
 `
 
 export const TransactionBox = styled.tr`
@@ -45,7 +41,7 @@ align-items: center;
 border-radius: 3px;
 
 &:nth-child(even){
-background-color: #ece9e2;
+background-color: ${(props) => props.theme.colors.lightYellow};
 }
 `
 
@@ -54,5 +50,5 @@ text-transform: capitalize;
 width: 120px;
 padding: 10px 40px;
 margin: 0;
-border: #dbd9d9 solid 2px;
+border: ${(props) => `${props.theme.colors.whiteShaded} solid 2px`};
 `

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Container, Subtitle, SubtitleBox, SubtitleText, Body, TransactionBox, TransactionText} from "./TransactionHistory.styled"
+import {Container, Subtitle, SubtitleBox, SubtitleText, TransactionBox, TransactionText} from "./TransactionHistory.styled"
 
 export function TransactionHistory({ items }) {
   return (
@@ -11,7 +11,7 @@ export function TransactionHistory({ items }) {
           <SubtitleText>Currency</SubtitleText>
         </SubtitleBox>
       </Subtitle>
-      <Body>
+      <tbody>
         {items.map(({ id, type, amount, currency }) => {
           return (
             <TransactionBox key={id}>
@@ -21,7 +21,7 @@ export function TransactionHistory({ items }) {
             </TransactionBox>
           );
         })}
-      </Body>
+      </tbody>
     </Container>
   );
 }

@@ -6,7 +6,7 @@ position: relative;
 padding: 15px;
 margin: 15px auto;
 display: block;
-background-color: white;
+background-color: ${(props) => props.theme.colors.white};
 height: 400px;
 max-width: 300px;
 `
@@ -21,7 +21,7 @@ margin-top: 20px;
 export const Avatar = styled.img`
 max-height: 200px;
 border-radius: 50%;
-background-color: #a39c9c;
+background-color: ${(props) => props.theme.colors.lightGrey};
 `
 export const UserName = styled.p`
 margin:  10px 0 0 0;
@@ -54,7 +54,7 @@ align-items: center;
 flex-direction: column;
 padding: 15px 10px;
 width: 100%;
-background-color: ${prop => `${prop.color}`};
+background-color: ${props => `${props.color}`};
 `
 
 export const Quantity = styled.span`

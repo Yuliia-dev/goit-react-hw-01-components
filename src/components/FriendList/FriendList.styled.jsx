@@ -4,7 +4,7 @@ export const FriendListStyle = styled.ul`
 padding: 15px;
 margin: 15px auto;
 max-width: 300px;
-background-color: #ffffff;
+background-color: ${(props) => props.theme.colors.white};
 `
 
 export const FriendItem = styled.li`
@@ -16,9 +16,9 @@ margin-bottom: 10px;
 padding: 15px;
 height: 100px;
 max-width: 300px;
-box-shadow: 5px 5px 5px #a39c9c;
+box-shadow: ${(props) => `5px 5px 5px ${props.theme.colors.lightGrey}`};
 list-style: none;
-background-color: #f0eeee;
+background-color: ${(props) => props.theme.colors.light};
 `
 
 export const Status = styled.span`
@@ -26,8 +26,8 @@ margin-right: 20px;
 height: 15px;
 width: 15px;
 border-radius: 50%;
-background-color: ${props => {
-    return props.status ? "#008000" : "#FF0000";
+background-color: ${(props) => {
+    return props.status ? props.theme.colors.green : props.theme.colors.red;
 }};
 `
 

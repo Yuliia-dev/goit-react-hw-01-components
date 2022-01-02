@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import getRandomHexColor from "../helper/randomColor"
+import getRandomHexColor from "../../helper/randomColor"
 
 export const Container = styled.section`
 position: relative;
@@ -7,7 +7,7 @@ padding: 15px;
 margin: 15px auto;
 max-width: 300px;
 height: 150px;
-background-color: white;
+background-color: ${(props) => props.theme.colors.white};
 `
 
 export const Title = styled.h2`
