@@ -7,10 +7,7 @@ import { FriendList } from '../FriendList/FriendList';
 import transactions from '../TransactionHistory/transactions.json';
 import { TransactionHistory } from '../TransactionHistory/TransactionHistory';
 import { Container } from './App.styled';
-import {GlobalStyle} from '../../helper/GlobalStyle.styled';
-
-
-
+import {GlobalStyle} from '../../styles/GlobalStyle.styled';
 
 export default function App() {
   return (

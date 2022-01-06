@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import {Container, Title, StatList, StatItem} from "./Statistics.styled"
 
-export function Statistics({ title, stats, color }) {
+export function Statistics({ title, stats}) {
   return (
     <Container>
       <Title>{title}</Title>
 
-      <StatList color={color}>
+      <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (
             <StatItem key={id}>
